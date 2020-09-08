@@ -13,7 +13,7 @@
   <body>
     <div class="container">
     <div class="row">
-      <div class="col-6 coffee-list">
+      <div class="col-6 coffee-list d-flex flex-column justify-content-around">
       <div class="coffee-item">
         <img src="img/americano.png" alt ="Американо">
           <span> Американо - 50 руб. </span>
@@ -31,7 +31,35 @@
           <span> Латтэ - 112 руб. </span>
       </div>
     </div>
-    <div class="col-6 coffee-oper"></div>
+    <div class="col-6 coffee-oper"><!--дисплей операций-->
+      <div class="row">
+        <div class="col-6">
+          <div class="display">
+            <p class="display-text">**ВЫБЕРИТЕ КОФЕ**</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="cup-container">
+            <img src="img/americano.png" alt="" class="cup">
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Баланс"> 
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">&#8381;</span>
+          </div>
+        </div>
+        <div class="atm-container">
+          <img src="img/bill_acc.png" alt="" class="atm">
+        </div>
+        <buttton class="btn btn-primary btn-block my-3">**СДАЧА**</buttton>
+        <div class="change-container">
+          
+        </div>
+      </div>
+    </div>
   </div>
 </div>
   
